@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: jf
+  name: test-cpu
+spec:
+  containers:
+  - image: guozijingguojingzi/centos-tools
+    command:
+    - sleep
+    - inf
+    name: c-1
